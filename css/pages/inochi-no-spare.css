@@ -10,13 +10,6 @@ body {
 	color: #707070;
 }
 
-/* Texto da sinopse */
-.sinopse {
-	text-align: justify;
-	font-size: 18px;
-	color: #707070;
-}
-
 
 
 /* -------------------------------------------*/
@@ -37,24 +30,63 @@ body {
 .btn-download:hover {
 	border-color: #4ceb95;
 	color: #4ceb95;
+	text-decoration: none;
 }
 
 
 
 /* -------------------------------------------*/
+/* --------->>> Caixa do Projeto <<----------*/
+/* -----------------------------------------*/
+
+/* Caixa */
+.box {
+	padding-top: 3rem;
+}
+
+/* Corpo da caixa */
+.project-box {
+	padding: 3rem 1.25rem;
+	position: relative;
+	background-color: #111;
+	border: 1px solid #333;
+	margin-bottom: 3rem;
+	z-index: 2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar resolução */
+@media (min-width: 768px) {
+	.project-box {
+		padding: 3rem;
+	}
+}
+
+/* Capa do Projeto */
+.project-sect .project-img img {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+/* Espaçamento */
+.project-sect .project-box {
+	padding-top: 3rem;
+	padding-bottom: 2.5rem;
+}
+
+/* Adaptar resolução */
+@media only screen and (max-width: 767px) {
+	.project-sect .project-box {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+}
+
+/* -------------------------------------------*/
 /* ------------->>> Títulos <<<--------------*/
 /* -----------------------------------------*/
 
-/* Detalhes e Progesso */
-.title-s {
-	font-weight: 600;
-	color: #18d26e;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.1rem;
-}
-
-
-
+/* "Projeto" */
 .section-title h2 {
 	font-size: 14px;
 	font-weight: 500;
@@ -68,6 +100,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+/* Barra ao lado do "Projeto" */
 .section-title h2::after {
 	content: "";
 	width: 120px;
@@ -77,8 +110,9 @@ body {
 	margin: 4px 10px;
 }
 
+/* Evitar algum erro */
 .section-title:after {
-	content: '';
+	content: "";
 	display: block;
 	width: 0px;
 	margin-left: -30px;
@@ -89,23 +123,29 @@ body {
 	border-bottom: transparent !important;
 }
 
-
-
+/* Nome do Projeto */
 .section-title p {
 	margin: 0;
 	margin: -15px 0 15px 15px;
 	font-size: 36px;
-	/**font-weight: 700;**/
-	/**text-transform: uppercase;**/
 	font-family: 'Tiro Devanagari Hindi', serif;
 	color: #fff;
 }
 
+/* Alinhar e evitar espaços */
 .section-title {
 	text-align: left;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+	padding-bottom: 0;
+	margin-bottom: 0;
 	position: relative;
+}
+
+/* Detalhes do Projeto */
+.project-info .title-s {
+	font-weight: 600;
+	color: #18d26e;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
 }
 
 
@@ -114,137 +154,25 @@ body {
 /* ------------->>> Sinopse <<<--------------*/
 /* -----------------------------------------*/
 
+/* Texto da Sinopse */
+.project-sinop .sinopse {
+	text-align: justify;
+	font-size: 18px;
+	color: #707070;
+}
+
+
+
+/* -------------------------------------------*/
+/* ------------>>> Progresso <<<-------------*/
+/* -----------------------------------------*/
+
+/* Espaçamento */
+.progress-area {
+	padding-top: 1rem;
+}
+
 /* Título */
-.title-left {
-	font-size: 2rem;
-	position: relative;
-	color: #4ceb95;
-}
-
-/* Barra em baixo do título */
-.title-left:before {
-	content: "";
-	position: absolute;
-	height: 3px;
-	background-color: #fff;
-	width: 100px;
-	bottom: -12px;
-}
-
-/* Espaço em baixo */
-.title-box-2 {
-	margin-bottom: 3rem;
-}
-
-
-
-/***************************************/
-/*****     CAIXA DO PROJETO         ****/
-/***************************************/
-
-
-.box-pl2 {
-	padding-left: 2rem;
-}
-
-.box-shadow,
-.card-blog,
-.work-box,
-.service-box,
-.paralax-mf {
-	box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a,
-.button:hover {
-	text-decoration: none;
-	box-shadow: 0 0 0 4px #cde1f8;
-}
-
-
-.table-cell {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-/*--/ Sections /--*/
-.sect-4 {
-	padding: 4rem 0;
-}
-
-.sect-pt4 {
-	padding-top: 4rem;
-}
-
-.sect-mt4 {
-	margin-top: 4rem;
-}
-
-.box-shadow-full {
-	padding: 3rem 1.25rem;
-	position: relative;
-	background-color: #111;
-	border: 1px solid #333;
-	margin-bottom: 3rem;
-	z-index: 2;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-	.box-shadow-full {
-		padding: 3rem;
-	}
-}
-
-
-
-
-/*--------------------------------------------------------------
-# PROGRESSO
---------------------------------------------------------------*/
-
-/* FOTO */
-.project-sect .box-shadow-full {
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
-
-
-
-
-.project-sect .project-img {
-	margin-bottom: 2rem;
-}
-
-
-
-.project-sect .project-img img {
-	margin-left: 0px;
-}
-
-
-@media (min-width: 767px) {
-	.project-sect .box-pl2 {
-		margin-top: 3rem;
-		padding-left: 0rem;
-	}
-}
-
-
-
-
-
-/* Textos das Barras */
-.progress-area span {
-	color: #fff;
-}
-
-/* Porcentagem */
-.progress-area .pull-right {
-	float: right;
-}
-
-/* "Progresso" */
 .progress-area .title-s {
 	font-size: 16px;
 	font-weight: 500;
@@ -258,6 +186,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+/* Barra ao lado do título */
 .progress-area .title-s::after {
 	content: "";
 	width: 120px;
@@ -267,13 +196,14 @@ body {
 	margin: 4px 10px;
 }
 
+/* Textos das Barras */
+.progress-area span {
+	color: #fff;
+}
 
-/* Fundo da Barra */
-.progress-area .progress {
-	background-color: rgba(255, 255, 255, 0.2);
-	margin: 0.5rem 0 1.2rem 0;
-	border-radius: 100px;
-	height: 0.7rem;
+/* Porcentagem */
+.progress-area .pull-right {
+	float: right;
 }
 
 /* Barra */
@@ -283,7 +213,10 @@ body {
 	border-radius: 0px;
 }
 
-
-.progress-area {
-	padding-top: 1rem;
+/* Fundo da Barra */
+.progress-area .progress {
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0.5rem 0 1.2rem 0;
+	border-radius: 100px;
+	height: 0.7rem;
 }
