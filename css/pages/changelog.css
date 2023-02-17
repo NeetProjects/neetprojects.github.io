@@ -1,0 +1,121 @@
+/* -------------------------------------------*/
+/* ------->>> Página de Changelog <<<--------*/
+/* -----------------------------------------*/
+
+
+/* Fundo da página e textos gerais */
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background: #000;
+	color: #707070;
+}
+
+
+/* Página */
+.changes {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    margin-left: 0px;
+}
+
+/* Título de Cima */
+.changes-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 4rem 0 20px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Linha ao lado */
+.changes-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+}
+
+/* Título de Baixo */
+.changes-title p {
+    margin: 0;
+    margin: -15px 0 30px 0px;
+    font-size: 36px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    color: #fff;
+}
+
+
+
+/* -------------------------------------------*/
+/* --------->>> Linha do Tempo <<<-----------*/
+/* -----------------------------------------*/
+
+/* Seção */
+.changes .row{
+    padding-left: 0.7rem;
+}
+
+/* Linha */
+.changes .changes-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #4ceb95;
+    position: relative;
+}
+
+/* Pontos */
+.changes .changes-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #4ceb95;
+    border: 2px solid #4ceb95;
+}
+
+/* Nome da Versão */
+.changes .changes-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #4ceb95;
+    margin-bottom: 10px;
+}
+
+/* Data */
+.changes .changes-item h5 {
+    font-size: 16px;
+    background-color: #222;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Mudanças */
+.changes .changes-item ul {
+    padding-left: 20px;
+}
+
+.changes .changes-item ul li {
+    padding-bottom: 10px;
+}
+
+.changes .changes-item:last-child {
+    padding-bottom: 0;
+}

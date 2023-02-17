@@ -1,0 +1,70 @@
+/* -------------------------------------------*/
+/* ------>>> Galeria de Screenshots <<<------*/
+/* -----------------------------------------*/
+
+/* Espaço da galeria */
+.print-gallery {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Substituir espaço do bootstrap */
+.print-gallery .row>div {
+    padding: 2px;
+}
+
+/* Imagens */
+.print-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+/* Aparecer lupa no Hover */
+.print-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'FontAwesome';
+    content: '\f002'; /* Ícone da Lupa */
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+/* Efeito de cor do Hover */
+.print-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+/* Opacidade do Hover */
+.print-gallery .lightbox:hover:after,
+.print-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+/* Fundo dos botões de passar e fechar */
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/* Ajustar para celular */
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}

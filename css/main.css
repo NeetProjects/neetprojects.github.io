@@ -1,0 +1,59 @@
+/* -------------------------------------------*/
+/* ---------->>> Aleatório :v <<<------------*/
+/* -----------------------------------------*/
+
+/* Largura máxima das imagens */
+img {
+	max-width: 100%;
+}
+
+/* Preloader */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #111;
+	z-index: 9999;
+	text-align: center;
+}
+
+
+
+/* -------------------------------------------*/
+/* --------->>> Seleção de Texto <<----------*/
+/* -----------------------------------------*/
+
+/* Firefox */
+::-moz-selection {
+	background: #4ceb95;
+	color: #000;
+}
+
+/* Geral */
+::selection {
+	background: #4ceb95;
+	color: #000;
+}
+
+
+
+/* -------------------------------------------*/
+/* -------->>> Adaptar resolução <<<---------*/
+/* -----------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+	.section-title {
+		padding-bottom: 10px;
+		margin-bottom: 60px;
+	}
+
+	.section-title:after {
+		width: 48px;
+		margin-left: -24px;
+		border-width: 8px;
+	}
+
+}

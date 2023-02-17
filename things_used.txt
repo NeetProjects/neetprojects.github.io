@@ -1,0 +1,8 @@
+Coisas usadas neste site:
+
+• Framework = Bootstrap v4.1.3
+• Biblioteca Java = jQuery v1.12.4
+• NavBar Mobile = SlickNav v1.0.10
+• Galeria = BaguetteBox v1.11.1
+• Ícones = Fontawesome v6.3.0
+• Preloader = Loading.io (https://loading.io/css/)

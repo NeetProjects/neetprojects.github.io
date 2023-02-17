@@ -1,0 +1,73 @@
+/* -------------------------------------------*/
+/* ------------->>> Footer <<<---------------*/
+/* -----------------------------------------*/
+
+/* Geral */
+.footer {
+	padding: 40px 0;
+	background: #222;
+}
+
+/* Espaço dos Ícones */
+.footer-icons {
+	margin-bottom: 20px;
+}
+
+/* Ícones */
+.footer-icons a {
+	display: inline-block;
+	font-size: 30px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+/* Ícones Hover */
+.footer-icons a:hover {
+	color: #18d26e;
+}
+
+.footer-warn p:last-child {
+	margin-bottom: 0;
+}
+
+/* Logo da Fansub */
+.footer-logo {
+	text-align: right;
+	margin-bottom: 30px;
+}
+
+/* Descrição da Fansub */
+.footer-desc {
+	text-align: right;
+}
+
+.footer-desc p {
+	margin: 0;
+}
+
+
+
+/* -------------------------------------------*/
+/* -------->>> Adaptar resolução <<<---------*/
+/* -----------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+	.footer-icons {
+		text-align: center;
+	}
+
+	.footer-icons a {
+		margin: 0 6px;
+	}
+
+	.footer-warn {
+		text-align: justify;
+		margin-bottom: 30px;
+	}
+
+	.footer-desc,
+	.footer-logo{
+		text-align: center;
+	}
+}
