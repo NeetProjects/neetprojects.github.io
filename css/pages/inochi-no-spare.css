@@ -33,6 +33,16 @@ body {
 	text-decoration: none;
 }
 
+/* Adaptar resolução */
+@media only screen and (max-width: 767px) {
+	.btn-download {
+		display: block;
+		align-content: center;
+		text-align: center;
+	}
+}
+
+
 
 
 /* -------------------------------------------*/
@@ -71,7 +81,7 @@ body {
 /* Espaçamento */
 .project-sect .project-box {
 	padding-top: 3rem;
-	padding-bottom: 2.5rem;
+	padding-bottom: 3rem;
 }
 
 /* Adaptar resolução */
@@ -79,6 +89,10 @@ body {
 	.project-sect .project-box {
 		padding-top: 2rem;
 		padding-bottom: 1rem;
+	}
+	.project-sect .project-img img {
+		margin-bottom: 1rem;
+		margin-left: 0;
 	}
 }
 
@@ -215,7 +229,7 @@ body {
 
 /* Fundo da Barra */
 .progress-area .progress {
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: #333333;
 	margin: 0.5rem 0 1.2rem 0;
 	border-radius: 100px;
 	height: 0.7rem;
