@@ -6,7 +6,7 @@
 body {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	background: #000;
+	background: var(--smoky-black);
 	color: #707070;
 }
 
@@ -18,18 +18,19 @@ body {
 
 /* Normal */
 .btn-download {
-	display: inline-block;
-	border: 2px solid #fff;
+
+	color: var(--white-1);
+	background: var(--onyx);
 	padding: 14px 30px;
-	border-radius: 4px;
-	color: #fff;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
 	transition: all 0.3s;
 }
 
 /* Com mouse */
 .btn-download:hover {
-	border-color: #4ceb95;
-	color: #4ceb95;
+	color: #09db92 !important;
 	text-decoration: none;
 }
 
@@ -44,25 +45,25 @@ body {
 
 
 
-
 /* -------------------------------------------*/
 /* --------->>> Caixa do Projeto <<----------*/
 /* -----------------------------------------*/
 
 /* Caixa */
 .box {
-	padding-top: 3rem;
+	padding-top: 4rem;
 }
 
 /* Corpo da caixa */
 .project-box {
 	padding: 3rem 1.25rem;
 	position: relative;
-	background-color: #111;
-	border: 1px solid #333;
+	background: var(--eerie-black-2);
+	border: 1px solid var(--jet);
+	box-shadow: var(--shadow-1);
+	border-radius: 5px;
 	margin-bottom: 3rem;
 	z-index: 2;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Ajustar resolução */
@@ -74,8 +75,9 @@ body {
 
 /* Capa do Projeto */
 .project-sect .project-img img {
-	margin-bottom: 0;
-	margin-left: 0;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.3);
 }
 
 /* Espaçamento */
@@ -90,6 +92,7 @@ body {
 		padding-top: 2rem;
 		padding-bottom: 1rem;
 	}
+
 	.project-sect .project-img img {
 		margin-bottom: 1rem;
 		margin-left: 0;
@@ -120,7 +123,7 @@ body {
 	width: 120px;
 	height: 1px;
 	display: inline-block;
-	background: #4ceb95;
+	background: var(--text-gradient-green);
 	margin: 4px 10px;
 }
 
@@ -156,8 +159,7 @@ body {
 
 /* Detalhes do Projeto */
 .project-info .title-s {
-	font-weight: 600;
-	color: #18d26e;
+	color: #09db92;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1rem;
 }
@@ -183,7 +185,22 @@ body {
 
 /* Espaçamento */
 .progress-area {
-	padding-top: 1rem;
+	position: relative;
+	background: var(--border-gradient-onyx);
+	padding: 25px;
+	padding-bottom: 5px;
+	border-radius: 14px;
+	box-shadow: var(--shadow-2);
+	z-index: 1;
+}
+
+.progress-area::before {
+	content: "";
+	position: absolute;
+	inset: 1px;
+	background: var(--bg-gradient-jet);
+	border-radius: inherit;
+	z-index: -1;
 }
 
 /* Título */
@@ -206,8 +223,20 @@ body {
 	width: 120px;
 	height: 1px;
 	display: inline-block;
-	background: #4ceb95;
+	background: var(--text-gradient-green);
 	margin: 4px 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.progress-area .title-s::after {
+		content: "";
+		width: 100px;
+		height: 1px;
+		display: inline-block;
+		background: var(--text-gradient-green);
+		margin: 4px 10px;
+	}
 }
 
 /* Textos das Barras */
@@ -222,9 +251,9 @@ body {
 
 /* Barra */
 .progress-area .progress .progress-bar {
-	height: 0.7rem;
-	background-color: #18d26e;
-	border-radius: 0px;
+	height: 0.6rem;
+	background: var(--text-gradient-green);
+	border-radius: 100px;
 }
 
 /* Fundo da Barra */
@@ -232,5 +261,36 @@ body {
 	background-color: #333333;
 	margin: 0.5rem 0 1.2rem 0;
 	border-radius: 100px;
-	height: 0.7rem;
+	height: 0.6rem;
+}
+
+
+
+/* -------------------------------------------*/
+/* ---------->>> Cores padrão <<<------------*/
+/* -----------------------------------------*/
+
+:root {
+
+	/* Degradê */
+	--bg-gradient-jet: linear-gradient(to bottom right,
+			hsla(240, 1%, 18%, 0.251) 0%,
+			hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+	--border-gradient-onyx: linear-gradient(to bottom right,
+			hsl(0, 0%, 25%) 0%,
+			hsla(0, 0%, 25%, 0) 50%);
+	--text-gradient-green: linear-gradient(to right,
+			#1D976C,
+			#93F9B9);
+
+	/* Cores */
+	--jet: hsl(0, 0%, 22%);
+	--onyx: hsl(240, 1%, 17%);
+	--eerie-black-2: hsl(240, 2%, 12%);
+	--smoky-black: hsl(0, 0%, 7%);
+	--white-1: hsl(0, 0%, 100%);
+
+	/* Sombra */
+	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+
 }

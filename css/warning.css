@@ -1,0 +1,143 @@
+/* -------------------------------------------*/
+/* -------------->>> Geral <<<---------------*/
+/* -----------------------------------------*/
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--smoky-black);
+}
+
+
+
+/* -------------------------------------------*/
+/* -------------->>> Popup <<<---------------*/
+/* -----------------------------------------*/
+
+/* Popup */
+.popup {
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: "Poppins", sans-serif;
+    display: none;
+    background: var(--border-gradient-onyx);
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;
+}
+
+/* Adaptar resolução */
+@media only screen and (max-width: 767px) {
+    .popup {
+        width: 220px;
+    }
+}
+
+/* Fundo */
+.popup::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+/* "Aviso" */
+.popup h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: var(--white-2);
+}
+
+/* Descrição */
+.popup p {
+    margin: 20px 0;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    line-height: 1.6;
+}
+
+/* Marcar negrito */
+.popup p strong {
+    color: red;
+    font-size: var(--fs-4);
+}
+
+
+
+/* -------------------------------------------*/
+/* -------------->>> Botões <<<--------------*/
+/* -----------------------------------------*/
+
+/* Botão de fechar */
+.close {
+    display: block;
+    margin: 0 0 20px auto;
+    padding: 0 !important;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent !important;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Botão de continuar */
+a {
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background: var(--text-gradient-yellow);
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------------*/
+/* ---------->>> Cores padrão <<<------------*/
+/* -----------------------------------------*/
+
+:root {
+
+    /* Degradê */
+    --bg-gradient-jet: linear-gradient(to bottom right,
+            hsla(240, 1%, 18%, 0.251) 0%,
+            hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+    --border-gradient-onyx: linear-gradient(to bottom right,
+            hsl(0, 0%, 25%) 0%,
+            hsla(0, 0%, 25%, 0) 50%);
+    --text-gradient-yellow: linear-gradient(to right,
+            #1D976C,
+            #93F9B9);
+
+    /* Cores */
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-2: hsl(0, 0%, 98%);
+    --light-gray: hsl(0, 0%, 84%);
+
+    /* Tamanho das fontes */
+    --fs-4: 16px;
+    --fs-6: 14px;
+
+    /* Sombra */
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+}

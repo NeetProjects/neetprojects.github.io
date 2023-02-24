@@ -3,12 +3,22 @@
 
 	var $window = $(window);
 
+	/* -------------------------------------------*/
+	/* ------------>>> Preloader <<<-------------*/
+	/* -----------------------------------------*/
+
 	/* Fade do Preloader */
 	$window.on("load", function () {
 		$(".preloader").fadeOut(800);
 	});
 
-	/* Navigation Bar */
+
+
+	/* -------------------------------------------*/
+	/* --------->>> Navigation Bar <<<-----------*/
+	/* -----------------------------------------*/
+
+	/* Navbar */
 	$(document).on('click', '.navbar-nav li a, #responsive-menu ul li a', function () {
 		if ($(this).hasClass("has-popup")) return false;
 		var id = $(this).attr('href');
@@ -21,7 +31,7 @@
 		}
 	});
 
-	/* Navigation Bar durante o Scroll */
+	/* Navibar durante o Scroll */
 	$window.scroll(function () {
 		if ($window.scrollTop() > 60) {
 			$('.navbar').addClass('navbar-fixed');

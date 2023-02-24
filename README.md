@@ -16,8 +16,10 @@ Este é o site de uma fansub iniciante de visual novels.
 ## ⭐ Créditos
 Créditos de alguns códigos:
 
- - Dash Bouquet - [Código base da galeria](https://codepen.io/dashbouquetdevelopment/details/mBvQrB)
-- Loading.io - [Código base do Preloader](https://loading.io/css/)
-## 👤 Criador
+ - Dash Bouquet - [Código base da galeria](https://codepen.io/dashbouquetdevelopment/pen/mBvQrB)
+ - Code Media - [Código base da tela de aviso](https://codepen.io/codemediaweb/pen/KKvmBmW)
+ - Sadee - [Código base de alguns visuais](https://github.com/codewithsadee/vcard-personal-portfolio)
+ - Loading.io - [Código base do Preloader](https://loading.io/css/)
 
+## 👤 Criador
 - [Yuno2k23](https://github.com/Yuno2k23)
