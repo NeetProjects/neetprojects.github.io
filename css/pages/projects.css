@@ -1,0 +1,199 @@
+/* Fundo da página e textos gerais */
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background: var(--smoky-black);
+	color: #707070;
+}
+
+/* Título de Cima */
+.projects-title h2 {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1px;
+	margin: 6rem 0 20px 0px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	text-align: left;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Linha ao lado */
+.projects-title h2::after {
+	content: "";
+	width: 120px;
+	height: 1px;
+	display: inline-block;
+	background: var(--text-gradient-green);
+	margin: 4px 10px;
+}
+
+/* Título de Baixo */
+.projects-title p {
+	margin: 0;
+	margin: -15px 0 20px 0px;
+	font-size: 36px;
+	font-family: 'Tiro Devanagari Hindi', serif;
+	color: #fff;
+}
+
+
+
+/* -------------------------------------------*/
+/* ------------->>> Projetos <<<-------------*/
+/* -----------------------------------------*/
+
+/* Filtro */
+.projects #projects-filters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+	background: var(--onyx);
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+/* Categorias */
+.projects #projects-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 15px 10px 15px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--white-1);
+  margin-bottom: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ajustar resolução */
+@media only screen and (max-width: 767px) {
+  .projects #projects-filters li {
+    padding: 12px 8px 10px 0px!important;
+    font-size: 10px !important;
+  }
+}
+
+/* Categoria ao passar o mouse */
+.projects #projects-filters li:hover,
+.projects #projects-filters li.filter-active {
+  color: #09db92;
+}
+
+/* Projeto */
+.projects .projects-item {
+  margin-bottom: 30px;
+}
+
+/* Ajustar resolução */
+@media only screen and (max-width: 767px) {
+  .projects .projects-item {
+    margin-bottom: 15px;
+  }
+}
+
+/*.projects #projects-filters li:last-child {
+  margin-right: 0;
+}
+*/
+
+
+
+/* -------------------------------------------*/
+/* -------->>> Efeitos do Projeto <<<--------*/
+/* -----------------------------------------*/
+
+/* Ajustar */
+.projects .project-elemnts {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Cor do fundo (Antes do Mouse / Invisível) */
+.projects .project-elemnts::before {
+  content: "";
+  background-color: #18d26fb2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+  border-radius: 0.25rem;
+}
+
+/* Cor do fundo (Com o Mouse / Visível) */
+.projects .project-elemnts:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+/* Link do Projeto (Antes do Mouse / Invisível) */
+.projects .project-elemnts .project-link {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+/* Link do Projeto (Com o Mouse / Visível) */
+.projects .project-elemnts:hover .project-link {
+  opacity: 1;
+  bottom: 50%;
+}
+
+/* Ícone do link */
+.projects .project-elemnts .project-link a {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  background: transparent;
+  transition: 0.3s;
+}
+
+
+
+/* -------------------------------------------*/
+/* ---------->>> Cores padrão <<<------------*/
+/* -----------------------------------------*/
+
+:root {
+
+	/* Degradê */
+	--bg-gradient-jet: linear-gradient(to bottom right,
+			hsla(240, 1%, 18%, 0.251) 0%,
+			hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+	--border-gradient-onyx: linear-gradient(to bottom right,
+			hsl(0, 0%, 25%) 0%,
+			hsla(0, 0%, 25%, 0) 50%);
+	--text-gradient-green: linear-gradient(to right,
+			#1D976C,
+			#93F9B9);
+
+	/* Cores */
+	--jet: hsl(0, 0%, 22%);
+	--onyx: hsl(240, 1%, 17%);
+	--eerie-black-2: hsl(240, 2%, 12%);
+	--smoky-black: hsl(0, 0%, 7%);
+	--white-1: hsl(0, 0%, 100%);
+
+	/* Sombra */
+	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+
+}

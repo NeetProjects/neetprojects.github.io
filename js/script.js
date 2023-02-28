@@ -34,6 +34,44 @@
 	/* SlickNav */
 	$('#main-menu').slicknav({ prependTo: '#responsive-menu', label: '', closeOnClick: true });
 
+
+
+	/* -------------------------------------------*/
+	/* -------------->>> Outros <<<--------------*/
+	/* -----------------------------------------*/
+
+	/* Filtro dos Projetos */
+	$(window).on('load', function () {
+		var projectsIsotope = $('.projects-container').isotope({
+			itemSelector: '.projects-item',
+			layoutMode: 'fitRows'
+		});
+
+		$('#projects-filters li').on('click', function () {
+			$("#projects-filters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+
+			projectsIsotope.isotope({
+				filter: $(this).data('filter')
+			});
+			aos_init();
+		});
+	});
+
+	/* Iniciar Animate on Scroll */
+	function aos_init() {
+		AOS.init({
+			duration: 1000,
+			easing: "ease-in-out-back",
+			once: true
+		});
+	}
+	$(window).on('load', function () {
+		aos_init();
+	});
+
+
+
 	/* Tirar o menu de contexto */
 	/* Tá aqui só por teste :v */
 	//document.addEventListener('contextmenu', event => event.preventDefault());

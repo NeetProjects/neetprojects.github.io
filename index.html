@@ -2,21 +2,20 @@
 <html lang="pt">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uma fansub iniciante que está traduzindo Inochi no Spare. [Site em versão beta!]">
+  <meta name="description" content="Uma fansub iniciante que está traduzindo ATRI.. [Site em versão beta!]">
   <meta name="keywords" content="">
   <meta name="author" content="Yuno">
 
   <!-- Dados do site para links -->
   <meta property="og:title" content="Neet Projects - BETA" />
-  <meta property="og:description" content="Uma fansub iniciante que está traduzindo Inochi no Spare. [Site em versão beta!]">
+  <meta property="og:description"
+    content="Uma fansub iniciante que está traduzindo ATRI. [Site em versão beta!]">
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://neetprojects.github.io" />
   <meta property="og:image" content="https://neetprojects.github.io/img/np_og_image.png" />
-  <meta name="twitter:card" content="summary_large_image">
-
 
   <!-- Nome -->
   <title>Neet Projects - BETA</title>
@@ -52,7 +51,7 @@
   <link href="css/main.css" rel="stylesheet" media="screen">
 
   <!-- CSS da Página -->
-  <link href="css/pages/inochi-no-spare.css" rel="stylesheet">
+  <link href="css/pages/projects.css" rel="stylesheet">
 
   <!-- Footer -->
   <link href="css/footer.css" rel="stylesheet">
@@ -60,9 +59,9 @@
   <!-- Navigation Bar -->
   <link href="css/nav.css" rel="stylesheet">
 
-  <!-- CSS da Galeria -->
-  <link href="css/gallery.css" rel="stylesheet">
-  <link href="css/baguettebox/baguetteBox.min.css" rel="stylesheet">
+  <!-- Animate on Scroll -->
+  <link href="js/aos/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -81,14 +80,14 @@
       <div class="container">
 
         <!-- Logo Escrita -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <h1><span>Neet</span> Projects</h1>
         </a>
 
         <!-- Navbar -->
         <ul class="navbar-nav ml-auto" id="main-menu">
           <li class="nav-item"><a class="nav-link" href="">Início (WIP)</a></li>
-          <li class="nav-item"><a class="nav-link" href="#project">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
           <li class="nav-item"><a class="nav-link" href="changelog.html">Mudanças</a></li>
           <li class="nav-item"><a class="nav-link" href="#footer">Sobre</a></li>
         </ul>
@@ -100,146 +99,71 @@
     </nav>
   </header>
 
-  <main id="main">
 
+  <main id="main">
 
  <!-- =======================================================
   *
-  * Página do Projeto
+  * Projettos
   *
   ======================================================== -->
 
-    <section id="project" class="project-sect box">
+    <section id="projects" class="projects section-bg">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="project-box">
-              <div class="row">
 
-                <!-- Título do Projeto -->
-                <div class="section-title">
-                  <h2>Projeto</h2>
-                  <p>Inochi no Spare: Eu nasci para você</p>
-                </div>
+        <div class="projects-title">
+          <h2>Projetos</h2>
+          <p>Traduções completas ou em desenvolvimento</p>
+        </div>
 
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
+        <!-- Filtro -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="projects-filters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-dev">Desenvolvimento</li>
+              <li data-filter=".filter-comp">Completo</li>
+              <li data-filter=".filter-brev">Em breve...</li>
+            </ul>
+          </div>
+        </div>
 
-                      <!-- Capa do Jogo -->
-                      <div class="project-img">
-                        <img src="img/project/inochi-no-spare/capa.png" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
+        <div class="row projects-container" data-aos="fade-up" data-aos-delay="100">
 
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <!-- Informações do Jogo -->
-                      <div class="project-info">
-                        <p><strong class="title-s">Título Original: </strong> <span>Inochi no Spare</span></p>
-                        <p><strong class="title-s">Duração: </strong> <span>Cerca de 12 horas</span></p>
-                        <p><strong class="title-s">Desenvolvedora: </strong> <span>AKEiSOFT3</span></p>
-                        <p><strong class="title-s">Gêneros: </strong> <span>Romance, Drama</span></p>
-                        <p><strong class="title-s">Lançamento: </strong> <span>2016</span></p>
-                        <!-- Classificação Indicativa-->
-                        <p><img src="img/class-indicativa/18.png" width="55" height="55"
-                            title="Não recomendado para menores de 18 anos"></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Progresso da Tradução -->
-                  <div class="progress-area">
-                    <p class="title-s">Progresso</p>
-                    <span>Menus</span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Imagens e Vídeos</span> <span class="pull-right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>História</span> <span class="pull-right">5%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <span>Revisão</span> <span class="pull-right">0%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="project-sinop pt-4 pt-md-0">
-
-                    <!-- Sinopse -->
-                    <p class="sinopse">
-                      Shukugawa Meguri sofre de uma doença chamada "Oumon". Até o momento, ninguém sabe sua causa
-                      e ainda não há tratamento real para isso. A única opção com uma pequena chance de sucesso é fazer
-                      um transplante de coração. Mas encontrar um coração compatível é algo que pode ser comparado a um
-                      milagre.
-                    </p>
-                    <p class="sinopse">
-                      Para esse propósito, a irmã de Meguri, Ria, nasceu como um "bebê projetado". Para que seu coração
-                      pudesse ser usado como um "sobressalente".
-                    </p>
-                    <p class="sinopse">
-                      Esta é a história de duas irmãs, a mais nova nascida para o bem da mais velha. Além de sua
-                      família, apenas o melhor amigo de Meguri, Ryuuji, sabe sobre seu segredo. Sua determinação vacila
-                      durante o pouco tempo que resta. Qual será a conclusão no final desses momentos emocionantes?
-                    </p>
-                  </div>
-
-                   <!-- Botão de Download -->
-                   <a href="aviso.html" class="btn-download">Baixar Patch [DEMO] <i class="fa-solid fa-cloud-arrow-down"></i></a>
-                  </div>
-                </div>
-
-                <!-- Galeria de Prints -->
-                <div class="print-gallery">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print1.png">
-                        <img src="img/project/inochi-no-spare/print1.png">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print2.png">
-                        <img src="img/project/inochi-no-spare/print2.png">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print3.png">
-                        <img src="img/project/inochi-no-spare/print3.png">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print4.png">
-                        <img src="img/project/inochi-no-spare/print4.png">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print5.png">
-                        <img src="img/project/inochi-no-spare/print5.png">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <a class="lightbox" href="img/project/inochi-no-spare/print6.png">
-                        <img src="img/project/inochi-no-spare/print6.png">
-                      </a>
-                    </div>
-                  </div>
-                </div>
+          <!-- Inochi -->
+          <div class="col-lg-4 col-md-6 projects-item filter-dev">
+            <div class="project-elemnts">
+              <img src="img/project/inochi/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <div class="project-link">
+                <a href="inochi.html" title="Página do projeto"><i class="fa-solid fa-link"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Atri -->
+          <div class="col-lg-4 col-md-6 projects-item filter-dev">
+            <div class="project-elemnts">
+              <img src="img/project/atri/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <div class="project-link">
+                <a href="atri.html" title="Página do projeto"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kemono Musume -->
+          <div class="col-lg-4 col-md-6 projects-item filter-brev">
+            <div class="project-elemnts">
+              <img src="img/project/kemomusu/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <div class="project-link">
+                <a href="kemomusu.html" title="Página do projeto"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+      </div>
     </section>
-
 
 
  <!-- =======================================================
@@ -252,12 +176,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
+
+            <!-- Ícones de Redes Sociais -->
             <div class="footer-icons">
               <a href="#"><i class="fa-brands fa-youtube"></i></a>
               <a href="#"><i class="fa-brands fa-twitter"></i></a>
               <a href="#"><i class="fa-brands fa-discord"></i></a>
             </div>
 
+            <!-- Avisos -->
             <div class="footer-warn">
               <p><i class="fa-solid fa-triangle-exclamation"></i>ㅤTodos os jogos presentes no site possuem direitos
                 reservados a seus respectivos donos.</p>
@@ -268,11 +195,13 @@
             </div>
           </div>
 
+          <!-- Logo do Site -->
           <div class="col-md-6">
             <div class="footer-logo">
-              <img src="img/np_logo_completa.png" width="200px" height="200px" draggable="false" (dragstart)="false;" ondragstart="return false;" alt="" />
+              <img src="img/np_logo_completa.png" width="200px" height="200px" alt="" />
             </div>
 
+            <!-- Descrição da Fansub -->
             <div class="footer-desc">
               <p>Somos uma fansub sem fins lucrativos que traduz visual novels por puro hobby. Site criado por Yuno!</p>
             </div>
@@ -301,9 +230,12 @@
     <!-- Script Geral -->
     <script src="js/script.js"></script>
 
-    <!-- Galeria -->
-    <script src="js/baguettebox/baguetteBox.min.js"></script>
-    <script>baguetteBox.run('.print-gallery')</script>
+    <!-- Animate on Scroll -->
+    <script src="js/aos/aos.js"></script>
+
+    <!-- Isotope -->
+    <script src="js/isotope-layout/isotope.pkgd.min.js"></script>
+
 
 </body>
 
