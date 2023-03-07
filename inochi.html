@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uma fansub iniciante que está traduzindo ATRI.. [Site em versão beta!]">
+  <meta name="description" content="Uma fansub de Visual Novels iniciante. [Site em versão beta!]">
   <meta name="keywords" content="">
   <meta name="author" content="Yuno">
 
   <!-- Dados do site para links -->
   <meta property="og:title" content="Neet Projects - BETA">
-  <meta property="og:description" content="Uma fansub iniciante que está traduzindo ATRI. [Site em versão beta!]">
+  <meta property="og:description" content="Uma fansub de Visual Novels iniciante. [Site em versão beta!]">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neetprojects.github.io">
   <meta property="og:image" content="https://neetprojects.github.io/img/np_og_image.png">
@@ -63,6 +63,9 @@
   <link href="css/gallery.css" rel="stylesheet">
   <link href="css/baguettebox/baguetteBox.min.css" rel="stylesheet">
 
+  <!-- Animate on Scroll -->
+  <link href="js/aos/aos.css" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar" data-offset="75">
@@ -80,15 +83,15 @@
       <div class="container">
 
         <!-- Logo Escrita -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="./">
           <h1><span>Neet</span> Projects</h1>
         </a>
 
         <!-- Navbar -->
         <ul class="navbar-nav ml-auto" id="main-menu">
           <li class="nav-item"><a class="nav-link" href="">Início (WIP)</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="changelog.html">Mudanças</a></li>
+          <li class="nav-item"><a class="nav-link" href="./">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./changelog">Mudanças</a></li>
           <li class="nav-item"><a class="nav-link" href="#footer">Sobre</a></li>
         </ul>
 
@@ -136,7 +139,7 @@
                       <div class="project-info">
                         <p><strong class="title-s">Título Original: </strong> <span>Inochi no Spare</span></p>
                         <p><strong class="title-s">Duração: </strong> <span>Cerca de 12 horas</span></p>
-                        <p><strong class="title-s">Desenvolvedora: </strong> <span>AKEiSOFT3</span></p>
+                        <p><strong class="title-s">Desenvolvedora: </strong> <span>AKABEiSOFT3</span></p>
                         <p><strong class="title-s">Gêneros: </strong> <span>Romance, Drama</span></p>
                         <p><strong class="title-s">Lançamento: </strong> <span>2016</span></p>
                         <!-- Classificação Indicativa-->
@@ -193,13 +196,13 @@
                   </div>
 
                   <!-- Botão de Download -->
-                  <a href="aviso-inochi.html" class="btn-download">Baixar Patch [DEMO] <i
+                  <a href="./aviso-inochi" class="btn-download" data-aos="fade-left">Baixar Patch [DEMO] <i
                       class="fa-solid fa-cloud-arrow-down"></i></a>
                 </div>
               </div>
 
               <!-- Galeria de Prints -->
-              <div class="print-gallery">
+              <div class="print-gallery" data-aos="fade-up">
                 <div class="row">
                   <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/project/inochi/print1.png">
@@ -305,6 +308,13 @@
     <!-- Galeria -->
     <script src="js/baguettebox/baguetteBox.min.js"></script>
     <script>baguetteBox.run('.print-gallery')</script>
+
+    <!-- Animate on Scroll -->
+    <script src="js/aos/aos.js"></script>
+
+    <!-- Isotope -->
+    <script src="js/isotope-layout/isotope.pkgd.min.js"></script>
+
 
 </body>
 
