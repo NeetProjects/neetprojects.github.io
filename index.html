@@ -30,202 +30,139 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-
-
- <!-- =======================================================
-  *
-  * Estilos (CSS) do Site
-  *
-  ======================================================== -->
-
-  <!-- FontAwesome -->
-  <link href="css/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+    integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
-
-  <!-- SlickNav -->
-  <link href="css/slicknav.css" rel="stylesheet">
-
-  <!-- CSS Geral -->
-  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
   <!-- CSS da Página -->
-  <link href="css/pages/projects.css" rel="stylesheet">
+  <link href="css/pages/index.css" rel="stylesheet">
 
   <!-- Footer -->
-  <link href="css/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/footer.css">
 
-  <!-- Navigation Bar -->
-  <link href="css/nav.css" rel="stylesheet">
-
-  <!-- Animate on Scroll -->
-  <link href="js/aos/aos.css" rel="stylesheet">
-
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
-<body data-spy="scroll" data-target="#main-navbar" data-offset="75">
+<body>
 
 
 
- <!-- =======================================================
-  *
-  * Navigation Bar (Barra de Navegação)
-  *
-  ======================================================== -->
+  <!-- ======= Hero ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="fade-right" data-aos-delay="100">
 
-  <header class="header">
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
-      <div class="container">
+      <!-- Nome e desc da fansub -->
+      <h1>Neet <span>Projects</span></h1>
+      <p>Uma fansub <span id="typed"></span></p>
 
-        <!-- Logo Escrita -->
-        <a class="navbar-brand" href="./">
-          <h1><span>Neet</span> Projects</h1>
-        </a>
-
-        <!-- Navbar -->
-        <ul class="navbar-nav ml-auto" id="main-menu">
-          <li class="nav-item"><a class="nav-link" href="">Início (WIP)</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="./changelog">Mudanças</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Sobre</a></li>
+      <!-- Páginas -->
+      <nav class="pages">
+        <ul>
+          <li><a class="pag-link active" href="#hero">Início</a></li>
+          <li><a class="pag-link" href="./projects">Projetos</a></li>
+          <li><a class="pag-link" href="./changelog">Mudanças</a></li>
+          <li><a class="pag-link" href="#footer">Sobre</a></li>
         </ul>
+      </nav>
 
-        <!-- Navbar no Celular -->
-        <div class="navbar-toggle"></div>
-        <div id="responsive-menu"></div>
+      <!-- Links -->
+      <div class="links">
+        <a title="(EM BREVE)" href="#"><i class="fab fa-discord"></i></a>
+        <a title="Repositório no GitHub" href="https://github.com/NeetProjects/neetprojects.github.io"><i
+            class="fab fa-github"></i></a>
+        <a title="Página no VNDB" href="https://vndb.org/p17545"><i class="fas fa-book-open"></i></a>
       </div>
-    </nav>
-  </header>
+    </div>
+  </section>
 
 
-  <main id="main">
 
- <!-- =======================================================
-  *
-  * Projettos
-  *
-  ======================================================== -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
 
-    <section id="projects" class="projects section-bg">
-      <div class="container">
-
-        <div class="projects-title">
-          <h2>Projetos</h2>
-          <p>Traduções completas ou em desenvolvimento</p>
-        </div>
-
-        <!-- Filtro -->
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="projects-filters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-dev">Desenvolvimento</li>
-              <li data-filter=".filter-comp">Completo</li>
-              <li data-filter=".filter-brev">Em breve...</li>
-            </ul>
+          <!-- Avisos -->
+          <div class="footer-warn">
+            <p><i class="fas fa-triangle-exclamation"></i>ㅤTodos os jogos presentes no site possuem direitos
+              reservados a seus respectivos donos.</p>
+            <p><i class="fas fa-triangle-exclamation"></i>ㅤNão disponibilizamos cópias piratas dos jogos e
+              recomendamos que os patchs sejam utilizados em versões originais.</p>
+            <p><i class="fas fa-triangle-exclamation"></i>ㅤNosso objetivo é promover acessibilidade das obras
+              para o público brasileiro, visto que elas não possuem traduções oficiais.</p>
           </div>
         </div>
 
-        <div class="row projects-container" data-aos="fade-up" data-aos-delay="100">
-
-          <!-- Inochi -->
-          <div class="col-lg-4 col-md-6 projects-item filter-dev">
-            <div class="project-elemnts">
-              <img src="img/project/inochi/capa.png" class="img-fluid rounded b-shadow-a" alt="">
-              <div class="project-link">
-                <a href="./inochi" title="Página do projeto"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
+        <!-- Logo do Site -->
+        <div class="col-md-6">
+          <div class="footer-logo">
+            <img src="img/np_logo_completa.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
+              ondragstart="return false;" alt="" />
           </div>
 
-          <!-- Kemono Musume -->
-          <div class="col-lg-4 col-md-6 projects-item filter-brev">
-            <div class="project-elemnts">
-              <img src="img/project/kemomusu/capa.png" class="img-fluid rounded b-shadow-a" alt="">
-              <div class="project-link">
-                <a href="./kemomusu" title="Página do projeto"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      </div>
-    </section>
-
-
- <!-- =======================================================
-  *
-  * Footer (rodapé) da Página
-  *
-  ======================================================== -->
-
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-
-            <!-- Ícones de Redes Sociais -->
-            <div class="footer-icons">
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-discord"></i></a>
-            </div>
-
-            <!-- Avisos -->
-            <div class="footer-warn">
-              <p><i class="fa-solid fa-triangle-exclamation"></i>ㅤTodos os jogos presentes no site possuem direitos
-                reservados a seus respectivos donos.</p>
-              <p><i class="fa-solid fa-triangle-exclamation"></i>ㅤNão disponibilizamos cópias piratas dos jogos e
-                recomendamos que os patchs sejam utilizados em versões originais.</p>
-              <p><i class="fa-solid fa-triangle-exclamation"></i>ㅤNosso objetivo é promover acessibilidade das obras
-                para o público brasileiro, visto que elas não possuem traduções oficiais.</p>
-            </div>
-          </div>
-
-          <!-- Logo do Site -->
-          <div class="col-md-6">
-            <div class="footer-logo">
-              <img src="img/np_logo_completa.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
-                ondragstart="return false;" alt="" />
-            </div>
-
-            <!-- Descrição da Fansub -->
-            <div class="footer-desc">
-              <p>Somos uma fansub sem fins lucrativos que traduz visual novels por puro hobby. Site criado por Yuno!</p>
-            </div>
+          <!-- Descrição da Fansub -->
+          <div class="footer-desc">
+            <p>Somos uma fansub sem fins lucrativos que traduz visual novels por puro hobby. Site criado por Yuno!</p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
+  <!-- ======= Scripts ======= -->
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- Bootstrap -->
+  <script src="js/bootstrap/bootstrap.min.js"></script>
 
- <!-- =======================================================
-  *
-  * Scripts da Página
-  *
-  ======================================================== -->
+  <!-- Animate on Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery-3.6.3.min.js"></script>
+  <!-- Script temporário -->
+  <!-- Tô com preguiça de arrumar um bug então vou arrumar pois :v -->
+  <script src="js/script2.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- SlickNav -->
-    <script src="js/jquery.slicknav.js"></script>
-
-    <!-- Script Geral -->
-    <script src="js/script.js"></script>
-
-    <!-- Animate on Scroll -->
-    <script src="js/aos/aos.js"></script>
-
-    <!-- Isotope -->
-    <script src="js/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- Script do Typed (Por enquanto vai ficar aqui :v) -->
+  <script>
+    var typed = new Typed('#typed', {
+      strings: [
+        'vagabunda (⋋_⋌)',
+        'preguiçosa ┐( •_•)┌',
+        'lixo (¬_¬)',
+        'pobre (ノ﹏ヽ)',
+        'safada (¬‿¬)',
+        'iniciante ( ･ω･)ﾉ'
+      ],
+      typeSpeed: 60,
+      startDelay: 100,
+      backSpeed: 40,
+      backDelay: 3000,
+      smartBackspace: false,
+      shuffle: true,
+      loop: true,
+      loopCount: Infinity,
+      cursorChar: '▎'
+    });
+  </script>
 
 
 </body>

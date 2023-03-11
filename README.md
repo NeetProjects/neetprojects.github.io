@@ -14,6 +14,7 @@ Este é o site de uma fansub iniciante de visual novels.
 | `FontAwesome` | `v6.3.0` | Ícones |
 | `Animate on Scroll` | `v2.3.4` | Efeitos de Animação |
 | `Isotope` | `v3.0.6` | Filtro para a lista de projetos |
+| `Typed.js` | `v2.0.12` | Animação de digitação |
 
 ## ⭐ Créditos
 Créditos de alguns códigos:
