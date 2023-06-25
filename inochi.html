@@ -14,32 +14,29 @@
   <meta property="og:description" content="Uma fansub de Visual Novels iniciante. [Site em versão beta!]">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neetprojects.github.io">
-  <meta property="og:image" content="https://neetprojects.github.io/img/np_og_image.png">
+  <meta property="og:image" content="https://neetprojects.github.io/img/np-banner.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Nome -->
   <title>Neet Projects - BETA</title>
 
   <!-- Ícone -->
-  <link href="img/favicon.png" rel="icon">
+ <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.png">
+ <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
 
-  <!-- Fontes -->
+<!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 
 
 
- <!-- =======================================================
-  *
-  * Estilos (CSS) do Site
-  *
-  ======================================================== -->
-
+  <!-- ======= CSS do site ======= -->
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    rel="text/css">
 
   <!-- Bootstrap -->
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -51,39 +48,30 @@
   <link href="css/main.css" rel="stylesheet" media="screen">
 
   <!-- CSS da Página -->
-  <link href="css/pages/inochi.css" rel="stylesheet">
+  <link href="css/pages/project-page.css" rel="stylesheet">
 
-  <!-- Footer -->
-  <link href="css/footer.css" rel="stylesheet">
 
-  <!-- Navigation Bar -->
-  <link href="css/nav.css" rel="stylesheet">
 
-  <!-- CSS da Galeria -->
-  <link href="css/gallery.css" rel="stylesheet">
+  <!-- BaguetteBox -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" rel="stylesheet">
 
   <!-- Animate on Scroll -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+    integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar" data-offset="75">
 
-
-
- <!-- =======================================================
-  *
-  * Navigation Bar (Barra de Navegação)
-  *
-  ======================================================== -->
-
+  <!-- ======= NavBar ======= -->
   <header class="header">
     <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
       <div class="container">
 
         <!-- Logo Escrita -->
-        <a class="navbar-brand" href="./projects">
+        <a class="navbar-brand" href="./">
           <h1><span>Neet</span> Projects</h1>
         </a>
 
@@ -92,7 +80,7 @@
           <li class="nav-item"><a class="nav-link" href="./">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="./projects">Projetos</a></li>
           <li class="nav-item"><a class="nav-link" href="./changelog">Mudanças</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about">Sobre</a></li>
         </ul>
 
         <!-- Navbar no Celular -->
@@ -104,13 +92,7 @@
 
   <main id="main">
 
-
- <!-- =======================================================
-  *
-  * Página do Projeto
-  *
-  ======================================================== -->
-
+    <!-- ======= Projeto ======= -->
     <section id="project" class="project-sect box">
       <div class="container">
         <div class="row">
@@ -130,7 +112,7 @@
 
                       <!-- Capa do Jogo -->
                       <div class="project-img">
-                        <img src="img/project/inochi/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="img/projects/inochi/capa.png" class="img-fluid rounded b-shadow-a" alt="">
                       </div>
 
                     </div>
@@ -162,9 +144,9 @@
                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
                         aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>História</span> <span class="pull-right">5%</span>
+                    <span>História</span> <span class="pull-right">45%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
                         aria-valuemax="100"></div>
                     </div>
                     <span>Revisão</span> <span class="pull-right">0%</span>
@@ -179,25 +161,26 @@
 
                     <!-- Sinopse -->
                     <p class="sinopse">
-                      Shukugawa Meguri sofre de uma doença chamada "Oumon". Até o momento, ninguém sabe sua causa
-                      e ainda não há tratamento real para isso. A única opção com uma pequena chance de sucesso é fazer
-                      um transplante de coração. Mas encontrar um coração compatível é algo que pode ser comparado a um
-                      milagre.
+                      Shukugawa Meguri sofre de uma doença chamada "Oumon". Até o momento, os médicos não sabem a causa
+                      ou tratamento para essa doença. A única opção com uma pequena chance de sucesso é um transplante de coração.
+                      Porém, encontrar um coração compatível é algo que pode ser comparado a um verdadeiro milagre.
                     </p>
                     <p class="sinopse">
-                      Para esse propósito, a irmã de Meguri, Ria, nasceu como um "bebê projetado". Para que seu coração
-                      pudesse ser usado como um "sobressalente".
+                      Foi para esse propósito que Ria, a irmã mais nova de Meguri, nasceu como um "bebê projetado",
+                      para que seu coração pudesse ser usado como um "sobressalente".
                     </p>
                     <p class="sinopse">
-                      Esta é a história de duas irmãs, a mais nova nascida para o bem da mais velha. Além de sua
-                      família, apenas o melhor amigo de Meguri, Ryuuji, sabe sobre seu segredo. Sua determinação vacila
-                      durante o pouco tempo que resta. Qual será a conclusão no final desses momentos emocionantes?
+                      Esta é a história de duas irmãs, a mais nova nascida para o bem da mais velha.
+                      Tirando sua família, apenas o melhor amigo de Meguri, Ryuuji, sabe sobre o seu segredo.
+                      Sua determinação vacila durante o pouco tempo que resta. Qual será a conclusão dessa história emocionante?
                     </p>
                   </div>
 
                   <!-- Botão de Download -->
-                  <a href="./aviso-inochi" class="btn-download" data-aos="fade-left">Baixar Patch [DEMO] <i
+                  <a href="./aviso-inochi" class="btn-download">Baixar Patch [DEMO] <i
                       class="fas fa-cloud-arrow-down"></i></a>
+                    <p><br>
+                      <strong>OBS: O próximo patch será liberado com 50% de progresso.</strong></p>
                 </div>
               </div>
 
@@ -205,33 +188,33 @@
               <div class="print-gallery" data-aos="fade-up">
                 <div class="row">
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print1.png">
-                      <img src="img/project/inochi/print1.png">
+                    <a class="lightbox" href="img/projects/inochi/print1.png">
+                      <img src="img/projects/inochi/print1.png">
                     </a>
                   </div>
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print2.png">
-                      <img src="img/project/inochi/print2.png">
+                    <a class="lightbox" href="img/projects/inochi/print2.png">
+                      <img src="img/projects/inochi/print2.png">
                     </a>
                   </div>
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print3.png">
-                      <img src="img/project/inochi/print3.png">
+                    <a class="lightbox" href="img/projects/inochi/print3.png">
+                      <img src="img/projects/inochi/print3.png">
                     </a>
                   </div>
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print4.png">
-                      <img src="img/project/inochi/print4.png">
+                    <a class="lightbox" href="img/projects/inochi/print4.png">
+                      <img src="img/projects/inochi/print4.png">
                     </a>
                   </div>
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print5.png">
-                      <img src="img/project/inochi/print5.png">
+                    <a class="lightbox" href="img/projects/inochi/print5.png">
+                      <img src="img/projects/inochi/print5.png">
                     </a>
                   </div>
                   <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/project/inochi/print6.png">
-                      <img src="img/project/inochi/print6.png">
+                    <a class="lightbox" href="img/projects/inochi/print6.png">
+                      <img src="img/projects/inochi/print6.png">
                     </a>
                   </div>
                 </div>
@@ -245,12 +228,7 @@
 
 
 
- <!-- =======================================================
-  *
-  * Footer (rodapé) da Página
-  *
-  ======================================================== -->
-
+    <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
@@ -258,8 +236,9 @@
 
             <!-- Links -->
             <div class="footer-icons">
-              <a title="Nosso server no Discord" href="#"><i class="fab fa-discord"></i></a>
-              <a title="Repositório no GitHub" href="https://github.com/NeetProjects/neetprojects.github.io"><i class="fab fa-github"></i></a>
+              <a title="(EM BREVE)" href="#"><i class="fab fa-discord"></i></a>
+              <a title="Repositório no GitHub" href="https://github.com/NeetProjects/neetprojects.github.io"><i
+                  class="fab fa-github"></i></a>
               <a title="Página no VNDB" href="https://vndb.org/p17545"><i class="fas fa-book-open"></i></a>
             </div>
 
@@ -275,7 +254,7 @@
 
           <div class="col-md-6">
             <div class="footer-logo">
-              <img src="img/np_logo_completa.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
+              <img src="img/np-logo.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
                 ondragstart="return false;" alt="" />
             </div>
 
@@ -289,14 +268,9 @@
 
 
 
- <!-- =======================================================
-  *
-  * Scripts da Página
-  *
-  ======================================================== -->
-
+    <!-- ======= Scripts ======= -->
     <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
@@ -312,11 +286,10 @@
     <script>baguetteBox.run('.print-gallery')</script>
 
     <!-- Animate on Scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
 
     <!-- Isotope -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
 </body>
 

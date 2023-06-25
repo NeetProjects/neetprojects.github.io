@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Uma fansub de Visual Novels iniciante. [Site em versão beta!]">
   <meta name="keywords" content="">
@@ -14,50 +14,51 @@
   <meta property="og:description" content="Uma fansub de Visual Novels iniciante. [Site em versão beta!]">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neetprojects.github.io">
-  <meta property="og:image" content="https://neetprojects.github.io/img/np_og_image.png">
+  <meta property="og:image" content="https://neetprojects.github.io/img/np-banner.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Nome -->
   <title>Neet Projects - BETA</title>
 
   <!-- Ícone -->
-  <link href="img/favicon.png" rel="icon">
+ <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.png">
+ <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
 
-  <!-- Fontes -->
+<!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+
+
 
   <!-- Animate on Scroll -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
-    integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"/>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="css/bootstrap/bootstrap.min.css">
 
   <!-- CSS da Página -->
-  <link href="css/pages/index.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="css/pages/index.css">
 
-  <!-- Footer -->
-  <link rel="stylesheet" href="css/footer.css">
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 
 </head>
 
 <body>
 
-
-
   <!-- ======= Hero ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="fade-right" data-aos-delay="100">
+    <div class="container">
 
       <!-- Nome e desc da fansub -->
       <h1>Neet <span>Projects</span></h1>
@@ -69,7 +70,7 @@
           <li><a class="pag-link active" href="#hero">Início</a></li>
           <li><a class="pag-link" href="./projects">Projetos</a></li>
           <li><a class="pag-link" href="./changelog">Mudanças</a></li>
-          <li><a class="pag-link" href="#footer">Sobre</a></li>
+          <li><a class="pag-link" href="./about">Sobre</a></li>
         </ul>
       </nav>
 
@@ -105,7 +106,7 @@
         <!-- Logo do Site -->
         <div class="col-md-6">
           <div class="footer-logo">
-            <img src="img/np_logo_completa.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
+            <img src="img/np-logo.png" width="200px" height="200px" draggable="false" (dragstart)="false;"
               ondragstart="return false;" alt="" />
           </div>
 
@@ -120,36 +121,27 @@
 
   <!-- ======= Scripts ======= -->
   <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
   <!-- Bootstrap -->
   <script src="js/bootstrap/bootstrap.min.js"></script>
 
   <!-- Animate on Scroll -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
-    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Script temporário -->
-  <!-- Tô com preguiça de arrumar um bug então vou arrumar pois :v -->
-  <script src="js/script2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
 
   <!-- Typed.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
-  <!-- Script do Typed (Por enquanto vai ficar aqui :v) -->
+  <!-- Script do Typed -->
   <script>
     var typed = new Typed('#typed', {
       strings: [
         'vagabunda (⋋_⋌)',
-        'preguiçosa ┐( •_•)┌',
+        'preguiçosa ┐(•_•)┌',
         'lixo (¬_¬)',
         'pobre (ノ﹏ヽ)',
-        'safada (¬‿¬)',
+        'safada ( ͡° ͜ʖ ͡°)',
+        'podre (～Д～)',
         'iniciante ( ･ω･)ﾉ'
       ],
       typeSpeed: 60,
