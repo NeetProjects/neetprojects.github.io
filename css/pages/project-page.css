@@ -5,7 +5,7 @@
 /* Fundo da página e textos gerais */
 body {
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--font-3);
 	background: var(--smoky-black);
 	color: #707070;
 }
@@ -18,20 +18,23 @@ body {
 
 /* Normal */
 .btn-download {
-
-	color: var(--white-1);
+	color: #fff;
 	background: var(--onyx);
-	padding: 14px 30px;
+	padding: 14px 95px;
 	border-radius: 8px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	display: inline-block;
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: all .3s ease-in-out;
 }
 
 /* Com mouse */
 .btn-download:hover {
-	color: #09db92 !important;
-	text-decoration: none;
+	color: #fff !important;
+	text-decoration: none !important;
+	background: var(--ng-2) !important;
+	box-shadow: 0 0 30px 0 var(--ng-2) !important;
 }
 
 /* Adaptar resolução */
@@ -75,8 +78,8 @@ body {
 
 /* Capa do Projeto */
 .project-sect .project-img img {
-	margin-bottom: 25px;
-	margin-left: 10px;
+	/*margin-bottom: 25px;*/
+	margin-left: 0px;
 	box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.3);
 }
 
@@ -94,10 +97,11 @@ body {
 	}
 
 	.project-sect .project-img img {
-		margin-bottom: 1rem;
 		margin-left: 0;
 	}
 }
+
+
 
 /* -------------------------------------------*/
 /* ------------->>> Títulos <<<--------------*/
@@ -114,7 +118,7 @@ body {
 	text-transform: uppercase;
 	color: #aaaaaa;
 	text-align: left;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-1);
 }
 
 /* Barra ao lado do "Projeto" */
@@ -143,9 +147,9 @@ body {
 /* Nome do Projeto */
 .section-title p {
 	margin: 0;
-	margin: -15px 0 15px 15px;
+	margin: -15px 0 0px 15px;
 	font-size: 36px;
-	font-family: 'Tiro Devanagari Hindi', serif;
+	font-family: var(--font-2);
 	color: #fff;
 }
 
@@ -159,24 +163,99 @@ body {
 
 /* Detalhes do Projeto */
 .project-info .title-s {
-	color: #09db92;
-	font-family: 'Poppins', sans-serif;
+	color: var(--ng-2);
+	font-family: var(--font-1);
 	font-size: 1.1rem;
+}
+
+/* Texto em baixo do título */
+.project-info p {
+	margin-top: 2px;
+	margin-bottom: 8px;
 }
 
 
 
-/* -------------------------------------------*/
-/* ------------->>> Sinopse <<<--------------*/
-/* -----------------------------------------*/
+/* -----------------------------------------------------*/
+/* ------------->>> Informações da VN <<<--------------*/
+/* ---------------------------------------------------*/
 
-/* Texto da Sinopse */
-.project-sinop .sinopse {
+/* Caixa de Sinopse */
+.sinop-box {
+	width: 640px;
+	height: 180px;
+	max-width: 150%;
+	/*border: 1px solid #white; /* Verificar tamanho */
+	overflow: auto; /* Ativar barra de rolagem ao passar do limite */
+	padding-right: 20px;
+}
+
+/* Sinopse */
+.sinop-box .sinopse {
 	text-align: justify;
 	font-size: 18px;
 	color: #707070;
 }
 
+/* Gêneros */
+.vn-genres {
+	display: flex;
+	max-width: 600px;
+	flex-wrap: wrap;
+	margin-left: 16px;
+}
+
+/* Texto dos gêneros */
+.vn-genres p {
+	font-family: var(--font-1);
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #383838;
+	transition: all .3s ease-in-out;
+	cursor: default;
+}
+
+@media only screen and (max-width: 1200px )  {
+	.sinop-box{
+		max-width: 120%;
+	/* Basicamente evita que a sinopse atravesse a imagem em telas menores */
+
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.sinop-box {
+		max-width: 200%;
+		/*border: 1px solid #white; /* Verificar tamanho */
+		padding-right: 20px;
+		height: auto;
+	}
+
+	.progress-area {
+		margin-right: -55%;
+		margin-bottom: 20px;
+	}
+
+	/* Texto em baixo do título */
+	.project-info p {
+		margin-inline-end: -60%;
+	}
+
+	.vn-genres {
+		margin-inline-end: -60%;
+	}
+
+	.btn-download{
+		margin-top: 15px;
+	}
+
+}
 
 
 /* -------------------------------------------*/
@@ -189,6 +268,7 @@ body {
 	background: var(--border-gradient-onyx);
 	padding: 25px;
 	padding-bottom: 5px;
+	margin-top: 10px;
 	border-radius: 14px;
 	box-shadow: var(--shadow-2);
 	z-index: 1;
@@ -214,7 +294,7 @@ body {
 	text-transform: uppercase;
 	color: #aaaaaa;
 	text-align: left;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-1);
 }
 
 /* Barra ao lado do título */
@@ -266,31 +346,27 @@ body {
 
 
 
-/* -------------------------------------------*/
-/* ---------->>> Cores padrão <<<------------*/
-/* -----------------------------------------*/
-
-:root {
-
-	/* Degradê */
-	--bg-gradient-jet: linear-gradient(to bottom right,
-			hsla(240, 1%, 18%, 0.251) 0%,
-			hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-	--border-gradient-onyx: linear-gradient(to bottom right,
-			hsl(0, 0%, 25%) 0%,
-			hsla(0, 0%, 25%, 0) 50%);
-	--text-gradient-green: linear-gradient(to right,
-			#1D976C,
-			#93F9B9);
-
-	/* Cores */
-	--jet: hsl(0, 0%, 22%);
-	--onyx: hsl(240, 1%, 17%);
-	--eerie-black-2: hsl(240, 2%, 12%);
-	--smoky-black: hsl(0, 0%, 7%);
-	--white-1: hsl(0, 0%, 100%);
-
-	/* Sombra */
-	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-
+.censored-container{
+	position: relative;
 }
+
+.censored-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+ }
+ 
+ .censored-text{
+	font-size: 40px;
+	color: #000;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+ }

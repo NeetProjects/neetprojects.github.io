@@ -3,6 +3,9 @@ img {
 	max-width: 100%;
 }
 
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* VERIFICAR SE AINDA PRECISA DISSO AQUI */
+
 
 /* -------------------------------------------*/
 /* --------->>> Seleção de Texto <<----------*/
@@ -10,14 +13,57 @@ img {
 
 /* Firefox */
 ::-moz-selection {
-	background: #4ceb95;
+	background: var(--ng-1);
 	color: #000;
 }
 
 /* Geral */
 ::selection {
-	background: #4ceb95;
+	background: var(--ng-1);
 	color: #000;
+}
+
+
+
+/* -------------------------------------------*/
+/* --------->>> Barra de Rolagem <<----------*/
+/* -----------------------------------------*/
+
+/* ---- WebKit (Chrome) ---- */
+
+/* Largura */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Fundo */
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: #000;
+}
+
+/* Indicador */
+::-webkit-scrollbar-thumb {
+	background-color: var(--ng-2);
+	border-radius: 5px;
+}
+
+/* ---- Mozilla (Firefox) ---- */
+
+/* Largura */
+::-moz-scrollbar {
+	width: 10px;
+}
+
+/* Fundo */
+::-moz-scrollbar-track {
+	background-color: #000;
+}
+
+/* Indicador */
+::-moz-scrollbar-thumb {
+	background-color: var(--ng-2);
+	border-radius: 5px;
 }
 
 
@@ -62,7 +108,7 @@ header .navbar {
 
 /* Logo Escrita (parte branca) */
 .navbar-brand h1 {
-	font-family: 'Tiro Devanagari Hindi', serif;
+	font-family: var(--font-2);
 	font-weight: normal;
 	transition: all 0.3s;
 	color: #fff;
@@ -71,24 +117,20 @@ header .navbar {
 
 /* Logo Escrita (parte verde) */
 .navbar-brand h1 span {
-	color: #09db92;
+	color: var(--ng-2);
 }
 
 header .navbar-collapse.collapse {
 	-webkit-box-pack: end;
 	-moz-box-pack: end;
-	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
-
 
 .navbar .navbar-nav .nav-item {
 	padding: 40px 6px 36px;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
 }
 
 /* Links inativo */
@@ -98,7 +140,7 @@ header .navbar-collapse.collapse {
 	font-weight: 400;
 	color: #fff;
 	border-radius: 4px;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-1);
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	transition: all 0.3s;
@@ -107,13 +149,13 @@ header .navbar-collapse.collapse {
 /* Link ativo (de acordo com a parte da página) */
 .navbar .navbar-nav .nav-link.active {
 	background: none;
-	color: #09db92;
+	color: var(--ng-2);
 }
 
 /* Hover do link inativo */
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-	color: #09db92;
+	color: var(--ng-2);
 }
 
 /* Hover do link ativo */
@@ -135,6 +177,8 @@ header .navbar.navbar-fixed {
 .navbar-fixed .navbar-nav .nav-item {
 	padding: 23px 6px;
 }
+
+
 
 /* -------------------------------------------*/
 /* -------->>> Navbar no mobile <<<----------*/
@@ -199,13 +243,13 @@ header .navbar.navbar-fixed {
 	color: #fff;
 	padding: 8px 0;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-1);
 }
 
 /* Hover das opções */
 .slicknav_nav a:hover {
 	background: none;
-	color: #09db92;
+	color: var(--ng-2);
 }
 
 
@@ -274,12 +318,6 @@ header .navbar.navbar-fixed {
 	box-shadow: var(--shadow-2);
 }
 
-/* Sombra */
-:root {
-	--transition-2: 0.5s ease-in-out;
-
-}
-
 /* Aparecer lupa no Hover */
 .print-gallery .lightbox:before {
 	position: absolute;
@@ -306,7 +344,7 @@ header .navbar.navbar-fixed {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	background-color: #18d26fb2;
+	background-color: var(--ng-4);
 	content: '';
 	transition: 0.4s;
 	border-radius: 10px;
@@ -359,7 +397,7 @@ header .navbar.navbar-fixed {
 
 /* Ícones Hover */
 .footer-icons a:hover {
-	color: #18d26e;
+	color: var(--ng-3);
 }
 
 .footer-warn p:last-child {
@@ -402,4 +440,46 @@ header .navbar.navbar-fixed {
 	.footer-logo {
 		text-align: center;
 	}
+}
+
+
+
+/* ------------------------------------------------*/
+/* ---------->>> Variáveis Globais <<<------------*/
+/* ----------------------------------------------*/
+
+:root {
+
+	/* Degradê */
+	--bg-gradient-jet: linear-gradient(to bottom right,
+			hsla(240, 1%, 18%, 0.251) 0%,
+			hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+	--border-gradient-onyx: linear-gradient(to bottom right,
+			hsl(0, 0%, 25%) 0%,
+			hsla(0, 0%, 25%, 0) 50%);
+	--text-gradient-green: linear-gradient(to right,
+			#1D976C,
+			#93F9B9);
+
+
+	/* ---- Cores ---- */
+	/* Tons de Preto/cinza */
+	--jet: #383838;
+	--onyx: #2b2b2c;
+	--eerie-black-2: #1e1e1f;
+	--smoky-black: #121212;
+
+	/* Tons de verde */
+	--ng-1: #4ceb95;
+	--ng-2: #09db92;
+	--ng-3: #18d26e;
+	--ng-4: #18d26fb2;
+
+	/* Sombra */
+	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+	
+	/* Fontes */
+	--font-1: 'Poppins', sans-serif;
+	--font-2: 'Tiro Devanagari Hindi', serif;
+	--font-3: 'Open Sans', sans-serif;
 }

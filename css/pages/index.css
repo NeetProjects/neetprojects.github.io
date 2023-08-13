@@ -5,7 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #707070;
-  background-color: black;
+  background-color: #000;
 }
 
 
@@ -43,12 +43,12 @@ body {
   font-size: 64px;
   line-height: 56px;
   color: #fff;
-  font-family: 'Tiro Devanagari Hindi', serif;
+  font-family: var(--font-2);
 }
 
 /* "Projects" */
 #hero h1 span {
-  color: #4ceb95;
+  color: var(--ng-1);
 }
 
 /* "Uma fansub" */
@@ -61,7 +61,7 @@ body {
 
 /* Texto digitado */
 #hero p span {
-  color: #4ceb95;
+  color: var(--ng-1);
   letter-spacing: 1px;
 }
 
@@ -95,7 +95,7 @@ body {
 
 /* Links ao passar o mouse */
 #hero .links a:hover {
-  color: #4ceb95;
+  color: var(--ng-1);
 }
 
 /* Adaptar resolução */
@@ -154,7 +154,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-1);
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -179,7 +179,7 @@ body {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: var(--ng-3);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;

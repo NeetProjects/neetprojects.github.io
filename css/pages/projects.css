@@ -1,7 +1,7 @@
 /* Fundo da página e textos gerais */
 body {
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--font-3);
 	background: var(--smoky-black);
 	color: #707070;
 }
@@ -17,7 +17,7 @@ body {
 	text-transform: uppercase;
 	color: #aaaaaa;
 	text-align: left;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-1);
 }
 
 /* Linha ao lado */
@@ -35,7 +35,7 @@ body {
 	margin: 0;
 	margin: -15px 0 20px 0px;
 	font-size: 36px;
-	font-family: 'Tiro Devanagari Hindi', serif;
+	font-family: var(--font-2);
 	color: #fff;
 }
 
@@ -62,10 +62,10 @@ body {
   display: inline-block;
   padding: 12px 15px 10px 15px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-1);
   line-height: 1;
   text-transform: uppercase;
-  color: var(--white-1);
+  color: #fff;
   margin-bottom: 1px;
   transition: all 0.3s ease-in-out;
 }
@@ -81,7 +81,7 @@ body {
 /* Categoria ao passar o mouse */
 .projects #projects-filters li:hover,
 .projects #projects-filters li.filter-active {
-  color: #09db92;
+  color: var(--ng-2);
 }
 
 /* Projeto */
@@ -118,7 +118,7 @@ body {
 /* Cor do fundo (Antes do Mouse / Invisível) */
 .projects .project-elemnts::before {
   content: "";
-  background-color: #18d26fb2;
+  background-color: var(--ng-4);
   position: absolute;
   left: 0;
   right: 0;
@@ -165,35 +165,4 @@ body {
   text-align: center;
   background: transparent;
   transition: 0.3s;
-}
-
-
-
-/* -------------------------------------------*/
-/* ---------->>> Cores padrão <<<------------*/
-/* -----------------------------------------*/
-
-:root {
-
-	/* Degradê */
-	--bg-gradient-jet: linear-gradient(to bottom right,
-			hsla(240, 1%, 18%, 0.251) 0%,
-			hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-	--border-gradient-onyx: linear-gradient(to bottom right,
-			hsl(0, 0%, 25%) 0%,
-			hsla(0, 0%, 25%, 0) 50%);
-	--text-gradient-green: linear-gradient(to right,
-			#1D976C,
-			#93F9B9);
-
-	/* Cores */
-	--jet: hsl(0, 0%, 22%);
-	--onyx: hsl(240, 1%, 17%);
-	--eerie-black-2: hsl(240, 2%, 12%);
-	--smoky-black: hsl(0, 0%, 7%);
-	--white-1: hsl(0, 0%, 100%);
-
-	/* Sombra */
-	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-
 }

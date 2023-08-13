@@ -6,7 +6,7 @@
 /* Fundo da página e textos gerais */
 body {
 	background: var(--smoky-black);
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--font-3);
 	font-size: 16px;
 	color: #707070;
 }
@@ -23,7 +23,7 @@ body {
 .changes-title h2 {
 	margin: 6rem 0 20px 0px;
 	padding: 0;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-1);
 	font-size: 14px;
 	font-weight: 500;
 	text-align: left;
@@ -47,7 +47,7 @@ body {
 .changes-title p {
 	margin: 0;
 	margin: -15px 0 30px 0px;
-	font-family: 'Tiro Devanagari Hindi', serif;
+	font-family: var(--font-2);
 	font-size: 36px;
 	color: #fff;
 }
@@ -87,11 +87,11 @@ body {
 /* Nome da Versão */
 .changes .changes-item h4 {
 	margin-bottom: 10px;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-1);
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: #4ceb95;
+	color: var(--ng-1);
 	line-height: 18px;
 }
 
@@ -104,7 +104,7 @@ body {
 	background-color: #222;
 	font-size: 16px;
 	font-weight: normal;
-	color: white;
+	color: #fff;
 }
 
 /* Mudanças */

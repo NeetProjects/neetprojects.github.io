@@ -14,7 +14,7 @@
 
 .about-txt #about-txt-title {
 	color: #fff;
-	font-family: 'Poppins', serif;
+	font-family: var(--font-1);
 }
 
 .about-txt::before {
@@ -45,7 +45,8 @@
 /* ----------------------------------*/
 
 .fansubs-sect {
-	padding: 40px 0;
+	margin-top: 40px;
+	margin-bottom: 100px;
 }
 
 .fansub-img {
@@ -74,7 +75,7 @@
 }
 
 .fansub-links a:hover {
-	color: #09db92;
+	color: var(--ng-2);
 }
 
 .fansub-name {
@@ -88,7 +89,7 @@
 	letter-spacing: 2px;
 	text-align: center;
 	margin: 20;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-1);
 }
 
 .fansub-name p {
