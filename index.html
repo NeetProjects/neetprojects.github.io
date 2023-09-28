@@ -32,26 +32,27 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 
-
+  <meta name="google-site-verification" content="szR4vh_nzGS3y7lsrtoyv2klUEDVQSZsQIZeEf9KvfA" />
 
   <!-- Animate on Scroll -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet"
-  href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+  <!-- CSS Auxiliar -->
+  <link href="css/pages/project-page.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pages/about.css">
 
   <!-- CSS da Página -->
-  <link rel="stylesheet"
-  href="css/pages/index.css">
-
+  <link rel="stylesheet" href="css/pages/index.css">
+  
   <!-- CSS Principal -->
   <link rel="stylesheet" href="css/main.css">
 
   <!-- FontAwesome -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
 </head>
 
@@ -71,7 +72,7 @@
           <li><a class="pag-link active" href="#hero">Início</a></li>
           <li><a class="pag-link" href="./projects">Projetos</a></li>
           <li><a class="pag-link" href="./changelog">Mudanças</a></li>
-          <li><a class="pag-link" href="./about">Sobre</a></li>
+          <li><a class="pag-link" href="#about">Sobre</a></li>
         </ul>
       </nav>
 
@@ -85,6 +86,138 @@
     </div>
   </section>
 
+  	<!-- ======= Sobre ======= -->
+  <section id="about" class="about-sect">
+	 <div class="container">
+		 <div class="row">
+			<div class="col-md-12">
+
+				<div class="section-title">
+					<h2>Sobre</h2>
+					<p>Um pouco sobre a fansub</p>
+				</div>
+
+			</div>
+		</div>
+
+			<div class="row">
+				<div class="col-md-5">
+					<!-- ======= Logo ======= -->
+					<div class="about-img" data-aos="fade-right">
+						<figure>
+							<img src="img/np-logo.png" width="90%" height="90%" draggable="false"
+								(dragstart)="false;" ondragstart="return false;" alt="" />
+						</figure>
+					</div>
+				</div>
+
+				<div class="col-md-7">
+
+					<!-- ======= Texto sobre a fansub ======= -->
+					<div class="about-txt" data-aos="fade-left">
+						<h3 id="about-txt-title">História</h3>
+
+						<p>
+							Tudo começou quando Yuno, um amante por visual novels, resolveu se dar o desafio de
+							traduzir alguma novel, e acabou escolhendo Inochi no Spare.
+							Depois disso, Yuno começou a procurar mais vns para traduzir e assim criou a Neet
+							Projects em fevereiro de 2023.
+						</p>
+						<p><strong>"Neet"</strong> é uma palavra geralmente utilizada no contexto dos animes para
+							se referir a uma
+							pessoa que não trabalha e nem estuda, ou como chamamos informalmente no Brasil:
+							<strong>VABAGUNDO!</strong>
+						</p>
+						<p><strong>"Projects"</strong> se refere aos projetos de tradução da fansub.</p>
+
+						<p>Ou seja, podemos dizer que a "Neet Projects" são <strong>"Projetos de um
+								Vagabundo"</strong>!</p>
+
+						<p>E para representar a fansub, escolhemos Tomoko Kuroki como mascote, pois ela é uma
+							otome que mesmo estudando lembra bastante uma neet.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- ======= Parcerias ======= -->
+	<section class="fansubs-sect">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Título -->
+					<div class="section-title">
+						<h2>Parcerias</h2>
+						<p>Fansubs que são nossas amigas</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+
+					<!-- Subaiso -->
+					<div class="fansub" data-aos="fade-right">
+						<div class="fansub-img">
+							<figure>
+								<img src="./img/fansubs/subaiso.png" draggable="false" (dragstart)="false;"
+									ondragstart="return false;" alt="" />
+							</figure>
+
+							<div class="fansub-links">
+								<a title="Servidor no Discord" href="https://discord.gg/DYsp3FjvWh"><i
+										class="fab fa-discord"></i></a>
+								<a title="Perfil no X" href="https://twitter.com/_Subaiso_"><i
+										class="fab fa-x-twitter"></i></a>
+								<a title="Página no VNDB (EM BREVE)" href=""><i class="fa fa-book-open"></i></a>
+							</div>
+						</div>
+
+						<div class="fansub-name">
+							<h3>Subaiso</h3>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="discord">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-title">
+						<h2>Discord</h2>
+						<p>Nosso servidor no Discord</p>
+					</div>
+
+				</div>
+			</div>
+			<iframe
+				data-aos="fade-up"
+				src="https://discord.com/widget?id=1082734179185344663&theme=dark"
+				width="100%"
+				height="300"
+				allowtransparency="true"
+				frameborder="0"
+				sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+				
+				style="
+					border-radius: 12px 12px 0 0;
+					margin-top: 10px;
+					margin-bottom: 100px;
+				"
+				>
+			</iframe>
+		</div>
+	</section>
+
 
 
 
@@ -95,6 +228,20 @@
 
   <!-- Bootstrap -->
   <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <script>
+    	/* Iniciar Animate on Scroll */
+	function aos_init() {
+		AOS.init({
+			duration: 1000,
+			easing: "ease-in-out-back",
+			once: true
+		});
+	}
+	$(window).on('load', function () {
+		aos_init();
+	});
+  </script>
 
   <!-- Animate on Scroll -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
