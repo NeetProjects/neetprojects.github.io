@@ -1,42 +1,42 @@
 /* Fundo da página e textos gerais */
 body {
-	font-size: 16px;
-	font-family: var(--font-3);
-	background: var(--smoky-black);
-	color: #707070;
+  font-size: 16px;
+  font-family: var(--font-3);
+  background: var(--smoky-black);
+  color: #707070;
 }
 
 /* Título de Cima */
 .projects-title h2 {
-	font-size: 14px;
-	font-weight: 500;
-	padding: 0;
-	line-height: 1px;
-	margin: 6rem 0 20px 0px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #aaaaaa;
-	text-align: left;
-	font-family: var(--font-1);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 6rem 0 20px 0px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  text-align: left;
+  font-family: var(--font-1);
 }
 
 /* Linha ao lado */
 .projects-title h2::after {
-	content: "";
-	width: 120px;
-	height: 1px;
-	display: inline-block;
-	background: var(--text-gradient-green);
-	margin: 4px 10px;
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--text-gradient-green);
+  margin: 4px 10px;
 }
 
 /* Título de Baixo */
 .projects-title p {
-	margin: 0;
-	margin: -15px 0 20px 0px;
-	font-size: 36px;
-	font-family: var(--font-2);
-	color: #fff;
+  margin: 0;
+  margin: -15px 0 20px 0px;
+  font-size: 36px;
+  font-family: var(--font-2);
+  color: #fff;
 }
 
 
@@ -51,7 +51,7 @@ body {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-	background: var(--onyx);
+  background: var(--onyx);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -73,7 +73,7 @@ body {
 /* Ajustar resolução */
 @media only screen and (max-width: 767px) {
   .projects #projects-filters li {
-    padding: 12px 8px 10px 0px!important;
+    padding: 12px 8px 10px 0px !important;
     font-size: 10px !important;
   }
 }
@@ -82,6 +82,56 @@ body {
 .projects #projects-filters li:hover,
 .projects #projects-filters li.filter-active {
   color: var(--ng-2);
+}
+
+/* Toggle */
+.switch {
+  display: block;
+  width: 88px;
+  height: 37px;
+  position: relative;
+}
+
+/* Checkbox oculta */
+.checkbox {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Fundo do toggle */
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: var(--onyx);
+  border-radius: 50px;
+  /*border: 2px solid var(--onyx);*/
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+/* Bolinha do toggle */
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+
+/* Fundo ativado */
+.checkbox:checked+.slider {
+  background-color: var(--ng-1);
+}
+
+/* Bolinha ativada */
+.checkbox:checked+.slider::before {
+  transform: translateX(50px);
 }
 
 /* Projeto */

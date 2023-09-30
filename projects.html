@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uma fansub brasileira de Visual Novels.">
+  <meta name="description" content="Somos a Neet Projects, uma fansub brasileira de Visual Novels que traduz histórias para português.">
   <meta name="keywords" content="">
   <meta name="author" content="Yuno">
 
   <!-- Dados do site para links -->
   <meta property="og:title" content="Neet Projects">
-  <meta property="og:description" content="Uma fansub brasileira de Visual Novels.">
+  <meta property="og:description" content="Somos a Neet Projects, uma fansub brasileira de Visual Novels que traduz histórias para português.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neetprojects.github.io">
   <meta property="og:image" content="https://neetprojects.github.io/img/np-banner.png">
@@ -63,7 +63,7 @@
       <div class="container">
 
         <!-- Logo Escrita -->
-        <a class="navbar-brand" href="./">
+        <a class="navbar-brand" href="/">
           <h1><span>Neet</span> Projects</h1>
         </a>
 
@@ -98,11 +98,20 @@
         <!-- Filtro -->
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
+            <!-- DESATIVADO POR ENQUANTO
+            <label id="censor-toggle" class="switch">
+              <input class="checkbox" type="checkbox">
+              <span class="slider"></span>
+            </label>
+            <object
+            style="margin-left: 20px; margin-right: 42px;"
+            data="img/18-icon.svg" width="35" height="35">
+            </object>-->
             <ul id="projects-filters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-dev">Desenvolvimento</li>
-              <li data-filter=".filter-comp">Completo</li>
-              <li data-filter=".filter-brev">Em breve...</li>
+              <li data-filter="*:not(.censored)" class="filter-active">Todos</li>
+              <li data-filter=".filter-dev:not(.censored)">Desenvolvimento</li>
+              <li data-filter=".filter-comp:not(.censored)">Completo</li>
+              <li data-filter=".filter-brev:not(.censored)">Em breve...</li>
             </ul>
           </div>
         </div>
@@ -110,12 +119,12 @@
         <!-- Grade de projetos -->
         <div class="row projects-container" data-aos="fade-up" data-aos-delay="100">
 
-          <!-- Inochi -->
-          <div class="col-lg-4 col-md-6 projects-item filter-brev">
+          <!-- Tsukihime PLUS+DISC -->
+          <div class="col-lg-4 col-md-6 projects-item filter-comp">
             <div class="project-elemnts">
-              <img src="img/projects/inochi/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <img src="vn/tsuki-plus/img/capa.png" class="img-fluid rounded b-shadow-a" alt="">
               <div class="project-link">
-                <a href="./inochi" title="Página do projeto"><i class="fas fa-link"></i></a>
+                <a href="vn/tsuki-plus" title="Página do projeto"><i class="fas fa-link"></i></a>
               </div>
             </div>
           </div>
@@ -123,29 +132,29 @@
           <!-- Kemomusu -->
           <div class="col-lg-4 col-md-6 projects-item filter-dev">
             <div class="project-elemnts">
-              <img src="img/projects/kemomusu/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <img src="vn/kemomusu/img/capa.png" class="img-fluid rounded b-shadow-a" alt="">
               <div class="project-link">
-                <a href="./kemomusu" title="Página do projeto"><i class="fas fa-link"></i></a>
+                <a href="vn/kemomusu" title="Página do projeto"><i class="fas fa-link"></i></a>
               </div>
             </div>
           </div>
 
-          <!-- Tsukihime PLUS+DISC -->
-          <div class="col-lg-4 col-md-6 projects-item filter-comp">
+          <!-- Inochi -->
+          <div class="col-lg-4 col-md-6 projects-item filter-brev">
             <div class="project-elemnts">
-              <img src="img/projects/tsuki-plus/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <img src="vn/inochi/img/capa.png" class="img-fluid rounded b-shadow-a" alt="">
               <div class="project-link">
-                <a href="./tsuki-plus.html" title="Página do projeto"><i class="fas fa-link"></i></a>
+                <a href="vn/inochi" title="Página do projeto"><i class="fas fa-link"></i></a>
               </div>
             </div>
           </div>
 
           <!-- Comyu -->
-          <div class="col-lg-4 col-md-6 projects-item filter-dev">
+          <div class="col-lg-4 col-md-6 projects-item filter-brev">
             <div class="project-elemnts">
-              <img src="img/projects/comyu/capa.png" class="img-fluid rounded b-shadow-a" alt="">
+              <img src="vn/comyu/img/capa.png" class="img-fluid rounded b-shadow-a" alt="">
               <div class="project-link">
-                <a href="./comyu.html" title="Página do projeto"><i class="fas fa-link"></i></a>
+                <a href="vn/comyu" title="Página do projeto"><i class="fas fa-link"></i></a>
               </div>
             </div>
           </div>
@@ -211,14 +220,13 @@
     <script src="js/jquery.slicknav.js"></script>
 
     <!-- Script Geral -->
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Animate on Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
 
     <!-- Isotope -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
 
 </body>
 
