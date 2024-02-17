@@ -29,7 +29,7 @@ function addTitle(project) {
 function addCover(project) {
     var projectCover = $("<div>").append(
         $("<img>")
-            .attr("src", `/vn/${project.id}/img/capa.png`)
+            .attr("src", `/vn/${project.id}/img/capa.webp`)
             .addClass("img-fluid rounded b-shadow-a")
             .attr("alt", "")
     );
@@ -44,7 +44,7 @@ function addInfos(project) {
             .attr("src", "/img/class-indi/" + project.peg + ".png")
             .attr("width", "40")
             .attr("height", "40")
-            .attr("title", "Não recomendado para menores de" + project.peg + "anos"),
+            .attr("title", "Não recomendado para menores de " + project.peg + " anos"),
         dados
     );
     projectInfo.append(infos);
@@ -118,7 +118,7 @@ function addGallery(project) {
     if (project.gallery == ""){return}
     // Se tiver galeria:
     for (var i = 1; i < 7; i++) { // Ir do "print1" até "print6"
-        var printPath = `${PATH}/img/print${i}.png`;
+        var printPath = `${PATH}/img/print${i}.webp`;
         var div = $("<div>")
             .addClass("col-sm-6 col-md-4")
             .attr("data-aos", "fade-up")
