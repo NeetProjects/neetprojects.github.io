@@ -20,12 +20,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://neetprojects.github.io/about</loc>
-        <lastmod>2023-09-29</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://neetprojects.github.io/vn/tsuki-plus</loc>
         <lastmod>2023-09-29</lastmod>
         <changefreq>always</changefreq>
@@ -44,6 +38,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://neetprojects.github.io/vn/comyu</loc>
+        <lastmod>2023-09-29</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <url>
         <loc>https://neetprojects.github.io/vn/comyu</loc>
         <lastmod>2023-09-29</lastmod>
         <changefreq>always</changefreq>

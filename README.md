@@ -1,6 +1,6 @@
 # 🖥 Neet Projects
 
-Este é o repositório do website da Neet Projects, uma fansub iniciante de visual novels. Aqui você encontrará todo o código fonte que faz o site funcionar.
+Este é o repositório do website da Neet Projects, uma fansub brasileira de visual novels. Aqui você encontrará todo o código fonte que faz o site funcionar, e você pode contribuir para o desenvolvimento reportanto erros e/ou ajudando com os códigos.
 
 ## 🛠 Ferramentas
 
@@ -9,7 +9,7 @@ Este é o repositório do website da Neet Projects, uma fansub iniciante de visu
 | Nome                |  Versão  | Descrição                         |
 | :--------           | :------- | :--------------------             |
 | `Bootstrap`         | `v4.1.3` | Framework                         |
-| `jQuery`            | `v3.6.3` | Biblioteca Java                   |
+| `jQuery`            | `v3.6.3` | Biblioteca JavaScript             |
 | `SlickNav`          | `v1.0.10`| Barra de navegação para celulares |
 | `BaguetteBox`       | `v1.11.1`| Galeria de imagens                |
 | `FontAwesome`       | `v6.4.2` | Ícones                            |
@@ -35,10 +35,4 @@ Créditos de alguns códigos:
 
 ## ⚠️ Aviso
 
-**Este website serve apenas para distribuir patchs de tradução gratuitos. Não disponibilizamos cópias piratas dos jogos e recomendamos que os patchs sejam utilizados em cópias originais de seus respectivos títulos.**
-
-## 📚 Licença
-
-Você pode modificar o site da maneira que desejar. Atribuir ou não os créditos é da escolha de cada um! :)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+**Este website serve apenas para distribuir patchs de tradução gratuitos. NÃO disponibilizamos cópias piratas dos jogos e recomendamos que os patchs sejam utilizados em cópias originais de seus respectivos títulos.**

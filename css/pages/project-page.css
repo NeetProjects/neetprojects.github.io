@@ -131,6 +131,13 @@ body {
 	margin: 4px 10px;
 }
 
+/* Evitar que a barra fique em baixo em telas menores  */
+@media only screen and (max-width: 767px) {
+    .section-title h2::after {
+        margin: -12px 87px 4px;
+    }
+}
+
 /* Evitar algum erro */
 .section-title:after {
 	content: "";

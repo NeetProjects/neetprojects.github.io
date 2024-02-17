@@ -1,6 +1,17 @@
+/* Carregar Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* Largura máxima das imagens */
 img {
 	max-width: 100%;
+}
+
+/* Links */
+a, a:hover {
+	color: var(--ng-1);
 }
 
 /* -------------------------------------------*/
@@ -35,7 +46,7 @@ img {
 /* Fundo */
 ::-webkit-scrollbar-track {
 	border-radius: 5px;
-	background-color: #000;
+	background-color: #151515;
 }
 
 /* Indicador */
