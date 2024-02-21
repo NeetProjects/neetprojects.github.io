@@ -4,15 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-/* Largura máxima das imagens */
-img {
-	max-width: 100%;
-}
 
 /* Links */
-a, a:hover {
-	color: var(--ng-1);
-}
+a, a:hover {color: var(--ng-1)}
+
+/* Evita bugs com o AOS */
+#main {overflow-x: hidden !important}
 
 /* -------------------------------------------*/
 /* --------->>> Seleção de Texto <<----------*/

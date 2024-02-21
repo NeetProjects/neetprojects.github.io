@@ -1,7 +1,12 @@
-const $win = $(window);
-const $doc = $(document);
-const load = (func) => $win.on('load', func);
-const read = (func) => $doc.ready(func);
+// Variáveis abreviadas
+const $win = $(window),
+	  $doc = $(document);
+
+// Funções abrevidas
+const load = (func) => $win.on('load', func),
+	  read = (func) => $doc.ready(func);
+
+
 
 /* -------------------------------------------*/
 /* --------->>> Navigation Bar <<<-----------*/
@@ -51,6 +56,9 @@ function aos_init() {
 	});
 }
 
+// Iniciar automáticamente
+load(aos_init);
+
 
 
 /* -------------------------------------------------------*/
@@ -58,54 +66,28 @@ function aos_init() {
 /* -----------------------------------------------------*/
 function projectFilter() {
 
-	const CENSOR_TOGGLE = '#censor-toggle input[type="checkbox"]';
-	var toggleOn = $(CENSOR_TOGGLE).is(':checked');
-	var isCensored = !toggleOn;
-
-	// Atualizar filtros dos projetos
-	function updateProjects() {
-		if(isCensored){									// Com censura:
-			$(".nsfw").addClass('censored');					// Colocar filtro
-		} else {											// Sem censura:
-			$('.nsfw, .censored').removeClass('censored');		// Tirar filtro
-		}
-	}
-
 	// Filtro dos projetos
 	var projectsIsotope = $('.projects-container').isotope({
 		itemSelector: '.projects-item',
-		filter:'*:not(.censored)',
+		filter:'*',
 		layoutMode: 'fitRows'
 	});
 
-	// Se o toggle de censura mudar de estado:
-	$(CENSOR_TOGGLE).change(function() {
-		toggleOn = $(this).is(':checked'); 					// Atualizar toggle
-		isCensored = !toggleOn;								// Atualizar censura
-		updateProjects(); 									// Atualizar projetos
-		var currentFilter = $('li.filter-active').data('filter');	// Pegar o filtro atual
-		projectsIsotope.isotope({filter: currentFilter});			// Recarregar filtro
-	});
-
 	// Escolher filtro
-	$('#projects-filters li').on('click', function() {			// Ao clicar em um filtro:
-		$("#projects-filters li").removeClass('filter-active');	// Desativar o anterior
-		$(this).addClass('filter-active');						// Ativar o atual
+	$('#projects-filters li').on('click', function() {			    // Ao clicar em um filtro:
+		$("#projects-filters li").removeClass('filter-active');	    // Desativar o anterior
+		$(this).addClass('filter-active');						    // Ativar o atual
 		// ---------------------------------------------------------// ----------------------
 		projectsIsotope.isotope({filter: $(this).data('filter')});  // Filtrar o atual
 		// ---------------------------------------------------------// ----------------------
-		aos_init();										// Animar usando AOS
 	});
 };
 
-load(aos_init)
 
 
-
-
-
-
-
+/* -----------------------------------------------------------*/
+/* -------------->>> Carregador de Projetos <<<--------------*/
+/* ---------------------------------------------------------*/
 
 // Divs da página
 const projectTitle    = $("#vn-title"     ),
@@ -116,7 +98,6 @@ const projectTitle    = $("#vn-title"     ),
 	  projectTags     = $(".vn-tags"      ),
 	  projectProgress = $(".progress-area"),
 	  projectGallery  = $("#gallery_row"  );
-
 
 
 /* -------------------------------------------------*/
@@ -132,6 +113,7 @@ function addTitle(project) {
 function addCover(project) {
 	var projectCover = $("<div>").append(
 		$("<img>")
+			.attr("loading", "lazy")
 			.attr("src", `/vn/${project.id}/img/capa.webp`)
 			.addClass("img-fluid rounded b-shadow-a")
 			.attr("alt", "")
@@ -144,10 +126,10 @@ function addInfos(project) {
 	var dados = "ㅤ" + project.info;
 	var infos = $("<p>").append(
 		$("<img>")
-			.attr("src", "/img/class-indi/" + project.peg + ".png")
-			.attr("width", "40")
-			.attr("height", "40")
-			.attr("title", "Não recomendado para menores de " + project.peg + " anos"),
+			.attr("src", `/img/class-indi/${project.peg}.svg`)
+			.attr("width", "40px")
+			.attr("height", "40px")
+			.attr("title", `Não recomendado para menores de ${project.peg} anos`),
 		dados
 	);
 	projectInfo.append(infos);
@@ -229,7 +211,9 @@ function addGallery(project) {
 			$("<a>")
 			.addClass("lightbox")
 			.attr("href", printPath)
-			.append($("<img>").attr("src", printPath))
+			.append($("<img>")
+			.attr("loading", "lazy")
+			.attr("src", printPath))
 		);
 		projectGallery.append(image);
 	}
