@@ -91,9 +91,9 @@ function projectFilter() {
 
 // Divs da página
 const projectTitle    = $("#vn-title"     ),
-	  projectImg      = $(".project-img"  ),
+	  projectImg      = $(".vn-cover"     ),
 	  patchDownload   = $("#download_row" ),
-	  projectInfo     = $(".project-info" ),
+	  projectInfo     = $(".vn-info"      ),
 	  projectSinopse  = $(".sinopse"      ),
 	  projectTags     = $(".vn-tags"      ),
 	  projectProgress = $(".progress-area"),
